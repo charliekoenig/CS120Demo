@@ -1,14 +1,224 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta name="description" content="This page is about me_two">
+        <meta name="description" content="About Me">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This Page is All About Me</title>
 
-        <title>me_two</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
-        <h1>Coming Soon</h1>
-    </body>
+        <ul class="socialMedia"> <!-- social media icon list -->
 
+            <li><a href="https://www.x.com" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+
+            <li><a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+
+        </ul> <!-- end social media icon list -->
+
+        <h1>Charlie Koenig</h1>
+        <h2>A Trip I Took Recently:</h2>
+
+        <div>
+            I went to London and Paris for Spring Break to visit my girlfriend
+            who spent the semester abroad. This was my first time traveling out 
+            of the country and I was flying alone so it was intimidating, but I 
+            made it. We took the train to Paris which was expensive but so much
+            easier than flying. Despite my three years of middle school French,
+            I was completely lost in conversation. On top of the language 
+            barrier, my overwhelming desire to be liked by random strangers made
+            simple tasks like ordering a sandwich a mentally exhausting 
+            experience.
+        </div>
+        <br>
+        <h2>Pet Names</h2>
+
+        <!-- nested list, ordered outside, unordered nested -->
+        <ol id="petNames">
+            <li>A dog named Wallie</li>
+                <ul>
+                    <li>I'm biased because this was my dog's name</li>
+                </ul>
+            <li>A dog named Sid</li>
+                <ul>
+                    <li>
+                        No explanation, just always a favorite. Unfortunatly
+                        very similar to "sit"
+                    </li>
+                </ul>
+            <li>A gerbil named Dmitry</li>
+                <ul>
+                    <li>Some more bias as this was my roomate's gerbil's name</li>
+                </ul>
+        </ol> <!-- end of list -->
+
+        <!--link nested within header <h2> -->
+        <h2>My Favorite Restuarant: 
+            <a 
+                href="https://www.instagram.com/paraiso_dominicana/" 
+                target="_blank">Paraiso Cocina Dominicana
+            </a>
+        </h2>
+        <div> <!-- start of restuarant paragraph -->
+            The food is great but I love the owner, Johan, more than anything 
+            else. It's $6 for a bowl plus whatever special Johan made that day,
+            usually empanadas. In highschool, I would walk here for lunch a few 
+            times a week and come after practice if he hadn't sold out of food 
+            yet. (No website so I linked the instagram)
+        </div> <!-- end of restuarant paragraph -->
+
+        <br>
+    
+        <h2>My Favorite Food</h2>
+
+        <!-- wrap text right, 20px margin between image and tex -->
+        <div id="sushiPic"></div>
+        <div>My favorite sushi is anything salmon-based with soy sauce and 
+            wasabi. Last summer, when I worked remote, I would walk to an 
+            all-you-can-eat place for lunch which always had a weekday lunch 
+            special. The quality might not have been the highest but at least I 
+            could afford it.<br><br>I've tried to make my own sushi before but 
+            the rice didn't turn out well and my rolling left a lot of room for 
+            improvement.<br><br><strong>I chose this picture because it was 
+            high quality (although I ruined it when I changed the size) I am 
+            strongly against cream cheese on sushi.</strong>
+        </div> <!-- end of food text wrap -->
+
+        <br clear="all">
+        <h2>My Favorite Books</h2>
+
+        <!-- inlcude border, 4px between border and content, 0px between cells -->
+        <table id="bookTable" border="1" cellpadding="4" cellspacing="0">
+            <tr> <!-- headings -->
+                <th>Title</th>
+                <th>Cover</th>
+                <th>Author</th>
+                <th>Summary</th>
+            </tr> <!-- end headings -->
+
+            <tr>
+                <td align="center">On the Road</td>
+                <td align="center"><img src="on_the_road.jpg" height="100"></td>
+                <td align="center">Jack Kerouac</td>
+                <td align="center">The story follows two men's travels across the United 
+                    States and Mexico</td>
+            </tr>
+
+            <tr>
+                <td align="center">The Handmaid's Tale</td>
+                <td align="center"><img src="handmaids_tale_cover.jpg" height="100"></td>
+                <td align="center">Margaret Atwood</td>
+                <td align="center">The main character, Offred, serves as a "Handmaid" whose 
+                    sole purpose is to have children for the ruling class.</td>
+            </tr>
+
+            <tr>
+                <td align="center">A Confederacy of Dunces</td>
+                <td align="center"><img src="confed_dunces.jpg" height="100"></td>
+                <td align="center">John Kennedy Toole</td>
+                <td align="center">A satire that follows Ignatius J. Reilly, a highly educated 
+                    but lazy and delusional man who lives with his mother in 
+                    New Orleans. He considers himself as a misunderstood genius 
+                    and looks down on the rest of society.</td>
+            </tr>
+
+            <tr>
+                <td align="center">The Sun Also Rises</td>
+                <td align="center"><img src="sun_rises.jpg" height="100"></td>
+                <td align="center">Ernest Hemingway</td>
+                <td align="center">Follows a group of friends of the "Lost Generation" as they 
+                    travel through Paris and Spain, leading seemingly 
+                    meaningless lives</td>
+            </tr>
+        </table> <!-- end of table -->
+
+        <br/>
+        <form method="get" action="#"> <!-- input form -->
+            <table id="formTable">
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>City:</label></td>
+                    <td><input type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>State:</label></td>
+                    <td><select>
+                        <option></option>
+                        <option>AL</option>
+                        <option>AK</option>
+                        <option>AZ</option>
+                        <option>AR</option>
+                        <option>CA</option>
+                        <option>CO</option>
+                        <option>CT</option>
+                        <option>DE</option>
+                        <option>FL</option>
+                        <option>GA</option>
+                        <option>HI</option>
+                        <option>ID</option>
+                        <option>IL</option>
+                        <option>IN</option>
+                        <option>IA</option>
+                        <option>KS</option>
+                        <option>KY</option>
+                        <option>LA</option>
+                        <option>ME</option>
+                        <option>MD</option>
+                        <option>MA</option>
+                        <option>MI</option>
+                        <option>MN</option>
+                        <option>MS</option>
+                        <option>MO</option>
+                        <option>MT</option>
+                        <option>NE</option>
+                        <option>NV</option>
+                        <option>NH</option>
+                        <option>NJ</option>
+                        <option>NM</option>
+                        <option>NY</option>
+                        <option>NC</option>
+                        <option>ND</option>
+                        <option>OH</option>
+                        <option>OK</option>
+                        <option>OR</option>
+                        <option>PA</option>
+                        <option>RI</option>
+                        <option>SC</option>
+                        <option>SD</option>
+                        <option>TN</option>
+                        <option>TX</option>
+                        <option>UT</option>
+                        <option>VT</option>
+                        <option>VA</option>
+                        <option>WA</option>
+                        <option>WV</option>
+                        <option>WI</option>
+                        <option>WY</option>
+                    </select></td>
+                </tr>
+            </table>
+            <br/>
+            <input type="submit" value="Submit">
+            
+        </form> <!-- end of input form -->
+    </body>
 </html>
