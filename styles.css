@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2 {
+    font-size: 30px;
+    color: #711d42;
+    margin-bottom: 30px;
+}
+
+#petNames {
+    width:48%;
+    display: block;
+    box-sizing:border-box;
+    margin: 0 auto;    
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+
+    border-width:5px;
+    border-color:black;
+    border-style:solid;
+}
+
+#sushiPic {
+    background-image: url("sushi.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    z-index: 1;
+}
+
+#sushiPic+div {
+    position: absolute;
+    display: inline-block;
+    padding:5px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+#bookTable tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+#formTable label {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.socialMedia {
+    position: fixed;
+    top: 100px;
+    right: 35px;
+    list-style: none;
+    margin: 0px;
+    display: inline;
+    z-index: 1000;
+}
+
+.fa-twitter{
+    color:#26a7de;
+}
+
+.fa-facebook{
+    color:#1877F2;
+}
+
+.socialMedia li {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.socialMedia li:hover {
+    scale: 1.25;
+    cursor: pointer;
+}
