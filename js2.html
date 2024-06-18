@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        temp_f = parseFloat(prompt("Enter a temperature in Fahrenheit"));
+
+        while (isNaN(temp_f)) {
+            temp_f = parseFloat(prompt("Enter a valid temperature in Fahrenheit"));
+        }
+
+        temp_c = (temp_f - 32) * (5/9)
+        alert(temp_c + "ºC")
+
+        temp_c = parseFloat(prompt("Enter a temperature in Celcius"));
+
+        while (isNaN(temp_c)) {
+            temp_c = parseFloat(prompt("Enter a valid temperature in Celcius"));
+        }
+
+        temp_f = (temp_c * (9/5)) + 32
+        alert(temp_f +  "ºF")
+        
+    </script>
+
+</body>

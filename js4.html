@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        numbers_string = prompt("Enter two numbers separated by a space");
+        numbers_elements = numbers_string.split(' ');
+
+        num_one = parseFloat(numbers_elements[0]);
+        num_two = parseFloat(numbers_elements[1]);
+
+        if (num_one < num_two) {
+            min = num_one;
+            max = num_two;
+        } else { 
+            min = num_one;
+            max = num_two;
+        }
+
+        sum = 0
+        for (i = min; i < max; i++) {
+            sum += i;
+
+            if ((i % 2) == 1) {
+                document.writeln(i + ' ')
+            }
+        }
+
+        document.writeln('<br/>Sum: ' + sum)
+
+    </script>
+
+</body>

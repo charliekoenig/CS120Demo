@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="result"></div>
+    <script>
+        function counter(numbers, minimum) {
+            let count = 0;
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] < minimum) {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+
+        function test_count() {
+            let array = [3, 55, 30, 28, 9, 12, 3, 5];
+            let minimum_val = 9;
+
+            let total = counter(array, minimum_val);
+
+            document.getElementById("result").innerHTML = total
+        }
+
+        test_count()
+    </script>
+
+
+</body>

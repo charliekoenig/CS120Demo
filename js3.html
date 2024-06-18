@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        numbers_string = prompt("Enter two numbers separated by a space");
+        numbers_elements = numbers_string.split(' ');
+
+        if (parseFloat(numbers_elements[0]) < parseFloat(numbers_elements[1])) {
+            console.log(numbers_elements[0] + ' ' + numbers_elements[1]);
+        } else { 
+            console.log(numbers_elements[1] + ' ' + numbers_elements[0]); 
+        }
+
+    </script>
+
+</body>
