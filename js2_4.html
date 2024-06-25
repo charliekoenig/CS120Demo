@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        window.onload = () => {
+            buttons = document.querySelectorAll("button")
+
+            for (i = 0; i < buttons.length; i++) {
+                let button = buttons[i];
+                button.onclick = () => { 
+                    prefix = button.innerText;
+                    username = document.getElementById("usernameBox").value
+                    alert(prefix + ' ' + username);
+                }
+            }
+        }
+
+    </script>
+    
+    <form>
+        <label>Username: <input type="text" id="usernameBox"></label>
+        <br><br>
+        <button>Hello</button>
+        <button>Goodbye</button>
+        <button>Greetings</button>
+    </form>
+
+</body>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        window.onload = () => {
+            setSelect();
+            
+            listedStates = [];
+
+            addButton   = document.getElementById("add");
+            clearButton = document.getElementById("clear");
+
+            addButton.onclick = () => {
+                index = document.getElementById("stateOptions").selectedIndex;
+                if (index >= 0) {
+                    stateNode = document.getElementById("stateOptions").options[index];
+                    listedStates.push(stateNode.value);
+                    document.getElementById("selectedStates").innerHTML = listedStates.join("<br>");
+                    document.getElementById("stateOptions").removeChild(stateNode);
+                }
+            }
+
+            clearButton.onclick = () => {
+                document.getElementById("stateOptions").innerHTML = "&nbsp;"
+                setSelect();
+                listedStates = [];
+                document.getElementById("selectedStates").innerHTML = "&nbsp;"
+            }
+
+        };
+
+        function setSelect () {
+            availableStates = ["New Jersey", "New York", "California", "Texas", 
+                               "Michigan", "Massachussets", "Kansas", "Florida", 
+                               "Washington", "North Carolina", "South Carolina"];
+
+            with (document.getElementById("stateOptions")) { /* begin with */
+                setAttribute("size", availableStates.length);
+                availableStates.forEach(state => {
+                    let option = document.createElement("option");
+                    option.value = state;
+                    option.innerHTML = state;
+
+                    appendChild(option);
+                });
+
+                selectedIndex = 0;
+            } /* end with */  
+        }
+
+    </script>
+
+    <select id="stateOptions">&nbsp;</select>
+    <button id="add">Add State</button>
+
+    <br><br>
+
+    <div id="selectedStates" style="min-width:10vw; display: inline-block; padding:5px; border: 1px solid;">
+        &nbsp;
+    </div>
+
+    <br><br>
+    <button id="clear">Clear States</button>
+
+</body>
